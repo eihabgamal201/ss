@@ -12,7 +12,7 @@ jobs:
           Expand-Archive -Path ngrok.zip -DestinationPath .
           
       - name: Setup ngrok token
-        run: ./ngrok.exe config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
+        run: ./ngrok.exe config add-authtoken 2b0vAGiKPXU6m5u71GQm1gTTtzr_5tjtXQfiNtevwrafEcUMV
         
       - name: Enable RDP
         run: |
